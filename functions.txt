@@ -1,0 +1,44 @@
+Q. 2 point of views of a function?
+
+generally the function created by one programmer is used by other
+to achieve this both the function definition and function call are seperated
+
+Python->Python36->Lib->save your code here
+
+this can now be used directly in ide with import statement
+
+
+
+
+Q. What happens when we create a function?
+
+as soon as the python interpreter sees the def keyword
+it creates a global frame for the function, which marks its existence globally
+next it jumps to that part of the code where the function was called
+it picks up the value of the argument to the function
+and then creates a temporary block or local frame for the function
+This frame stores info about the function local varialbes etc
+It is where all the computataion happens
+once the function is executed completely, the output is stored in the global frame
+and the local frame of the function is destroyed
+
+In a way we can say the global frame only have info about the final result and exists as long as the code exists
+the local frame is where all the local variables are stored and computation is done, it is destroyed the moment interpreter exists the function.
+
+Q. Difference between parameters and arguments
+
+parmeter is what is written inside the function () when defining it
+e.g. brigtness level of your phone is a parameter 
+
+argument is the set of values passed to the function while calling it 
+e.g. 0-10 brightness level values are arguments
+
+Q. types of arguments in python
+1. default arguments
+2. positional arguments
+3. keyword arguments
+4. arbitary order arguments
+5.variable-length positional arguments(*args)
+6. variable-length keyword arguments(*args)
+
+
